@@ -14,6 +14,10 @@ class ServiceProvider extends BaseServiceProvider
 	 */
 	public function boot()
 	{
+        Carbon::macro('l', static function ($formatName = "datetime_default") {
+            return self::this()->isoFormat(trans("datetime_formats.$formatName"));
+        });
+
         $this->publishes([
             __DIR__.'../lang/en' => $this->app->langPath('en'),
         ]);

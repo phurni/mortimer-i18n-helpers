@@ -25,3 +25,5 @@ artisan vendor:publish --provider='Mortimer\I18nHelpers\ServiceProvider'
 ### `trans_exception`
 
 ### `trans_model`
+
+### Carbon macro `l`
