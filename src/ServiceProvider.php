@@ -19,7 +19,7 @@ class ServiceProvider extends BaseServiceProvider
         });
 
         $this->publishes([
-            __DIR__.'../lang/en' => $this->app->langPath('en'),
+            __DIR__.'/lang/en' => $this->app->langPath('en'),
         ]);
     }
 
